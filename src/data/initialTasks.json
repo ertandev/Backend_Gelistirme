@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1",
+    "title": "Backend API Mimarisi ve Routing Kurulumu",
+    "description": "Express.js kullanarak modüler routing altyapısı ve temel middleware yapılandırmasını tamamla.",
+    "status": "completed",
+    "priority": "high",
+    "assignee": "musa",
+    "project": "TaskFlow Core API",
+    "createdAt": "2026-11-10T09:00:00.000Z",
+    "updatedAt": "2026-11-11T14:30:00.000Z",
+    "dueDate": "2026-11-12T18:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Veri Doğrulama (Validation) Middleware Geliştirme",
+    "description": "Görev oluşturma ve güncelleme istekleri için title, description, priority ve assignee alanlarını denetleyen middleware yaz.",
+    "status": "completed",
+    "priority": "medium",
+    "assignee": "musa",
+    "project": "TaskFlow Core API",
+    "createdAt": "2026-11-11T10:15:00.000Z",
+    "updatedAt": "2026-11-12T16:00:00.000Z",
+    "dueDate": "2026-11-14T18:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Kullanıcı Kimlik Doğrulama Servisi Entegrasyonu",
+    "description": "JWT tabanlı auth mekanizmasını ve şifreleme fonksiyonlarını backend katmanına entegre et.",
+    "status": "in_progress",
+    "priority": "high",
+    "assignee": "zeynep",
+    "project": "Auth Module",
+    "createdAt": "2026-11-12T11:00:00.000Z",
+    "updatedAt": "2026-11-14T09:20:00.000Z",
+    "dueDate": "2026-11-18T18:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "Database Yedekleme ve Replikasyon Stratejisi",
+    "description": "PostgreSQL veri tabanı için otomatik saatlik yedekleme ve replikasyon testlerini gerçekleştir.",
+    "status": "pending",
+    "priority": "critical",
+    "assignee": "ahmet",
+    "project": "DevOps & Altyapı",
+    "createdAt": "2026-11-13T13:45:00.000Z",
+    "updatedAt": "2026-11-13T13:45:00.000Z",
+    "dueDate": "2026-11-20T18:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "title": "Frontend Görev Yönetim Paneli Geliştirme",
+    "description": "React ve TailwindCSS ile görevlerin listelendiği, filtrelendiği ve sürüklenebildiği Kanban arayüzü tasarla.",
+    "status": "in_progress",
+    "priority": "medium",
+    "assignee": "elif",
+    "project": "Frontend UI",
+    "createdAt": "2026-11-13T15:30:00.000Z",
+    "updatedAt": "2026-11-14T11:00:00.000Z",
+    "dueDate": "2026-11-22T18:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "title": "Raporlama ve İstatistik Servisleri",
+    "description": "Tamamlanan, bekleyen ve devam eden görevlerin özet istatistiklerini hesaplayan backend servislerini hazırla.",
+    "status": "completed",
+    "priority": "low",
+    "assignee": "musa",
+    "project": "TaskFlow Core API",
+    "createdAt": "2026-11-14T08:00:00.000Z",
+    "updatedAt": "2026-11-14T17:45:00.000Z",
+    "dueDate": "2026-11-15T18:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "title": "Postman Test Koleksiyonu ve Otomasyonu",
+    "description": "Tüm CRUD endpoint'leri ve raporlama servisleri için kapsamlı test scriptleri ve senaryoları hazırla.",
+    "status": "pending",
+    "priority": "high",
+    "assignee": "can",
+    "project": "QA & Test",
+    "createdAt": "2026-11-14T14:10:00.000Z",
+    "updatedAt": "2026-11-14T14:10:00.000Z",
+    "dueDate": "2026-11-16T18:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "title": "API Dokümantasyonu ve Swagger/OpenAPI Hazırlığı",
+    "description": "Geliştiricilerin sisteme kolayca entegre olabilmesi için uç nokta kılavuzunu ve örnekleri dokümante et.",
+    "status": "pending",
+    "priority": "low",
+    "assignee": "elif",
+    "project": "Dokümantasyon",
+    "createdAt": "2026-11-15T09:30:00.000Z",
+    "updatedAt": "2026-11-15T09:30:00.000Z",
+    "dueDate": "2026-11-25T18:00:00.000Z"
+  }
+]
+
