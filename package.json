@@ -1,0 +1,30 @@
+{
+  "name": "taskflow-api",
+  "version": "1.0.0",
+  "description": "TASKFLOW - Görev ve Proje Yönetim Sistemi REST API Geliştirme Projesi",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/runTests.js",
+    "seed": "node -e \"require('./src/models/taskModel').resetData(); console.log('Mock veriler başarıyla sıfırlandı!');\""
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest-api",
+    "middleware",
+    "crud",
+    "taskflow"
+  ],
+  "author": "Ertan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
