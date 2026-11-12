@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const taskRoutes = require('./taskRoutes');
 
 router.get('/', (req, res) => {
   res.status(200).json({
@@ -7,5 +8,7 @@ router.get('/', (req, res) => {
     status: 'ONLINE'
   });
 });
+
+router.use('/tasks', taskRoutes);
 
 module.exports = router;
