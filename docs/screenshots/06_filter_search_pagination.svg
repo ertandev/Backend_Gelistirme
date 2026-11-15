@@ -30,7 +30,7 @@
   <!-- URL Çubuğu -->
   <rect x="20" y="55" width="860" height="42" class="bar-bg" rx="6" />
   <text x="35" y="81" class="method">GET</text>
-  <text x="100" y="81" class="url-text">http://localhost:3000/tasks?status=completed&priority=high&page=1&limit=5</text>
+  <text x="100" y="81" class="url-text">http://localhost:3000/tasks?status=completed&amp;priority=high&amp;page=1&amp;limit=5</text>
 
   <!-- Status / Response Metadata Bar -->
   <rect x="580" y="61" width="130" height="30" class="status-pill" />

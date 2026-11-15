@@ -26,6 +26,7 @@ function createPostmanSvg({
 
   const escapedReq = requestBody ? requestBody.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') : '';
   const escapedRes = responseBody.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const escapedUrl = url.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
   <defs>
@@ -59,7 +60,7 @@ function createPostmanSvg({
   <!-- URL Çubuğu -->
   <rect x="20" y="55" width="860" height="42" class="bar-bg" rx="6" />
   <text x="35" y="81" class="method">${method}</text>
-  <text x="100" y="81" class="url-text">${url}</text>
+  <text x="100" y="81" class="url-text">${escapedUrl}</text>
 
   <!-- Status / Response Metadata Bar -->
   <rect x="580" y="61" width="130" height="30" class="status-pill" />
