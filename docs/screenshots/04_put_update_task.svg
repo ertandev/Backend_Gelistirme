@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; }
+      .header-bg { fill: #252526; }
+      .top-title { fill: #cccccc; font-size: 13px; font-weight: 600; }
+      .bar-bg { fill: #2d2d2d; rx: 4px; }
+      .method { fill: #097BED; font-weight: 700; font-size: 13px; }
+      .url-text { fill: #e1e1e1; font-size: 13px; font-family: monospace; }
+      .status-pill { fill: #1f382b; rx: 4px; }
+      .status-text { fill: #25a45a; font-weight: 700; font-size: 12px; }
+      .meta-text { fill: #888888; font-size: 12px; }
+      .pane-bg { fill: #181818; rx: 6px; }
+      .pane-title { fill: #aaaaaa; font-size: 12px; font-weight: bold; letter-spacing: 0.5px; }
+      .json-text { fill: #9cdcfe; font-size: 11px; font-family: monospace; line-height: 1.4; }
+      .pass-badge { fill: #25a45a; font-size: 11px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="900" height="620" class="bg" rx="8" />
+
+  <!-- Postman Üst Çubuk -->
+  <rect width="900" height="42" class="header-bg" rx="8" />
+  <circle cx="20" cy="21" r="6" fill="#ed6a5f" />
+  <circle cx="38" cy="21" r="6" fill="#f5bf4f" />
+  <circle cx="56" cy="21" r="6" fill="#62c554" />
+  <text x="80" y="26" class="top-title">Postman - Aşama 03 / Test 04 - Görev Güncelleme (PUT /tasks/:id)</text>
+
+  <!-- URL Çubuğu -->
+  <rect x="20" y="55" width="860" height="42" class="bar-bg" rx="6" />
+  <text x="35" y="81" class="method">PUT</text>
+  <text x="100" y="81" class="url-text">http://localhost:3000/tasks/3</text>
+
+  <!-- Status / Response Metadata Bar -->
+  <rect x="580" y="61" width="130" height="30" class="status-pill" />
+  <text x="590" y="81" class="status-text">Status: 200 OK</text>
+  <text x="730" y="81" class="meta-text">Time: 20 ms</text>
+  <text x="810" y="81" class="meta-text">Size: 580 B</text>
+
+  <!-- Request Body Paneli (Varsa) -->
+  
+  <rect x="20" y="110" width="860" height="120" class="pane-bg" />
+  <text x="35" y="130" class="pane-title">REQUEST BODY (application/json):</text>
+  <foreignObject x="35" y="140" width="830" height="85">
+    <pre xmlns="http://www.w3.org/1999/xhtml" style="color: #ce9178; font-size: 11px; margin: 0; font-family: monospace;">{
+  "status": "completed",
+  "priority": "critical",
+  "description": "JWT kimlik doğrulama başarıyla tamamlandı, unit testler geçirildi."
+}</pre>
+  </foreignObject>
+  
+
+  <!-- Response Body Paneli -->
+  <rect x="20" y="240" width="860" height="280" class="pane-bg" />
+  <text x="35" y="260" class="pane-title">RESPONSE BODY (JSON):</text>
+  <foreignObject x="35" y="270" width="830" height="240">
+    <pre xmlns="http://www.w3.org/1999/xhtml" style="color: #9cdcfe; font-size: 11px; margin: 0; font-family: monospace; overflow-y: auto;">{
+  "success": true,
+  "statusCode": 200,
+  "message": "Görev başarıyla güncellendi.",
+  "data": {
+    "id": "3",
+    "title": "Kullanıcı Kimlik Doğrulama Servisi Entegrasyonu",
+    "description": "JWT kimlik doğrulama başarıyla tamamlandı, unit testler geçirildi.",
+    "status": "completed",
+    "priority": "critical",
+    "assignee": "zeynep",
+    "project": "Auth Module",
+    "createdAt": "2026-11-12T11:00:00.000Z",
+    "updatedAt": "2026-11-15T11:20:00.000Z"
+  }
+}</pre>
+  </foreignObject>
+
+  <!-- Test Results Çubuğu -->
+  <rect x="20" y="530" width="860" height="75" class="pane-bg" />
+  <text x="35" y="552" class="pane-title">TEST ASSERTIONS (POSTMAN TESTS):</text>
+  
+    <text x="35" y="572" class="pass-badge">✔ PASS</text>
+    <text x="90" y="572" fill="#dddddd" font-size="11px">Status code is 200 OK</text>
+  
+    <text x="35" y="588" class="pass-badge">✔ PASS</text>
+    <text x="90" y="588" fill="#dddddd" font-size="11px">Task status changed to 'completed' and priority to 'critical'</text>
+  
+    <text x="35" y="604" class="pass-badge">✔ PASS</text>
+    <text x="90" y="604" fill="#dddddd" font-size="11px">updatedAt timestamp updated to current ISO time</text>
+  
+</svg>

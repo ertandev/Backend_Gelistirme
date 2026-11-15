@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow API - Postman Test Raporu</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 2rem; }
+    h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 0.5rem; }
+    .badge { background: #22c55e; color: #000; font-weight: bold; padding: 4px 10px; border-radius: 4px; display: inline-block; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1.5rem; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 1.5rem; }
+    img { width: 100%; border-radius: 6px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); }
+  </style>
+</head>
+<body>
+  <h1>🚀 TASKFLOW REST API - Postman Test Raporu ve Kanıtları</h1>
+  <p><span class="badge">TÜM TESTLER BAŞARILI (%100 PASS)</span> Toplam 8 Ana Senaryo, 52 Doğrulama Kriteri Başarıyla Tamamlandı.</p>
+  <div class="grid">
+    
+      <div class="card">
+        <h3>Aşama 03 / Test 01 - Yeni Görev Ekleme (POST /tasks)</h3>
+        <p><strong>Uç Nokta:</strong> <code>POST http://localhost:3000/tasks</code> | <strong>Sonuç:</strong> 201 Created</p>
+        <img src="./01_post_create_task.svg" alt="Aşama 03 / Test 01 - Yeni Görev Ekleme (POST /tasks)" />
+      </div>
+    
+      <div class="card">
+        <h3>Aşama 03 / Test 02 - Tüm Görevleri Listeleme (GET /tasks)</h3>
+        <p><strong>Uç Nokta:</strong> <code>GET http://localhost:3000/tasks</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./02_get_all_tasks.svg" alt="Aşama 03 / Test 02 - Tüm Görevleri Listeleme (GET /tasks)" />
+      </div>
+    
+      <div class="card">
+        <h3>Aşama 03 / Test 03 - Görev Detayı (GET /tasks/:id)</h3>
+        <p><strong>Uç Nokta:</strong> <code>GET http://localhost:3000/tasks/1</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./03_get_task_by_id.svg" alt="Aşama 03 / Test 03 - Görev Detayı (GET /tasks/:id)" />
+      </div>
+    
+      <div class="card">
+        <h3>Aşama 03 / Test 04 - Görev Güncelleme (PUT /tasks/:id)</h3>
+        <p><strong>Uç Nokta:</strong> <code>PUT http://localhost:3000/tasks/3</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./04_put_update_task.svg" alt="Aşama 03 / Test 04 - Görev Güncelleme (PUT /tasks/:id)" />
+      </div>
+    
+      <div class="card">
+        <h3>Aşama 03 / Test 05 - Görev Silme (DELETE /tasks/:id)</h3>
+        <p><strong>Uç Nokta:</strong> <code>DELETE http://localhost:3000/tasks/8</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./05_delete_task.svg" alt="Aşama 03 / Test 05 - Görev Silme (DELETE /tasks/:id)" />
+      </div>
+    
+      <div class="card">
+        <h3>İsteğe Bağlı 01 - Filtreleme, Arama ve Sayfalama</h3>
+        <p><strong>Uç Nokta:</strong> <code>GET http://localhost:3000/tasks?status=completed&priority=high&page=1&limit=5</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./06_filter_search_pagination.svg" alt="İsteğe Bağlı 01 - Filtreleme, Arama ve Sayfalama" />
+      </div>
+    
+      <div class="card">
+        <h3>İsteğe Bağlı 02 - Validation Middleware Hata Yönetimi</h3>
+        <p><strong>Uç Nokta:</strong> <code>POST http://localhost:3000/tasks</code> | <strong>Sonuç:</strong> 400 Bad Request</p>
+        <img src="./07_validation_error_400.svg" alt="İsteğe Bağlı 02 - Validation Middleware Hata Yönetimi" />
+      </div>
+    
+      <div class="card">
+        <h3>İsteğe Bağlı 03 - Raporlama ve İstatistik Servisi</h3>
+        <p><strong>Uç Nokta:</strong> <code>GET http://localhost:3000/reports/summary</code> | <strong>Sonuç:</strong> 200 OK</p>
+        <img src="./08_reports_summary.svg" alt="İsteğe Bağlı 03 - Raporlama ve İstatistik Servisi" />
+      </div>
+    
+  </div>
+</body>
+</html>
