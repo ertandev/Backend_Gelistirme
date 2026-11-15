@@ -56,28 +56,28 @@ Bu doküman, TaskFlow REST API sisteminin tüm fonksiyonel, mimari ve doğrulama
 Aşağıda Postman üzerinde koşulan ve başarıyla geçen testlerin görsel kanıtları yer almaktadır:
 
 ### 1. Yeni Görev Ekleme (POST /tasks)
-![01 Post Create Task](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/01_post_create_task.svg)
+![01 Post Create Task](./screenshots/01_post_create_task.svg)
 
 ### 2. Tüm Görevleri Listeleme (GET /tasks)
-![02 Get All Tasks](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/02_get_all_tasks.svg)
+![02 Get All Tasks](./screenshots/02_get_all_tasks.svg)
 
 ### 3. Görev Detayı (GET /tasks/:id)
-![03 Get Task By ID](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/03_get_task_by_id.svg)
+![03 Get Task By ID](./screenshots/03_get_task_by_id.svg)
 
 ### 4. Görev Güncelleme (PUT /tasks/:id)
-![04 Put Update Task](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/04_put_update_task.svg)
+![04 Put Update Task](./screenshots/04_put_update_task.svg)
 
 ### 5. Görev Silme (DELETE /tasks/:id)
-![05 Delete Task](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/05_delete_task.svg)
+![05 Delete Task](./screenshots/05_delete_task.svg)
 
 ### 6. Filtreleme, Arama ve Sayfalama (GET /tasks?...)
-![06 Filter Search Pagination](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/06_filter_search_pagination.svg)
+![06 Filter Search Pagination](./screenshots/06_filter_search_pagination.svg)
 
 ### 7. Validation Middleware (400 Bad Request)
-![07 Validation Error 400](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/07_validation_error_400.svg)
+![07 Validation Error 400](./screenshots/07_validation_error_400.svg)
 
 ### 8. Raporlama ve İstatistik Servisi (GET /reports/summary)
-![08 Reports Summary](file:///Users/Ertan/Desktop/taskflow-api/docs/screenshots/08_reports_summary.svg)
+![08 Reports Summary](./screenshots/08_reports_summary.svg)
 
 ---
 

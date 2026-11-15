@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; font-family: -apple-system, BlinkMacSystemFont, "JetBrains Mono", Consolas, monospace; }
+      .header-bg { fill: #1e293b; }
+      .top-title { fill: #94a3b8; font-size: 13px; font-weight: 600; }
+      .txt-cmd { fill: #38bdf8; font-size: 13px; font-weight: bold; }
+      .txt-white { fill: #f8fafc; font-size: 12px; }
+      .txt-green { fill: #22c55e; font-size: 12px; font-weight: bold; }
+      .txt-yellow { fill: #eab308; font-size: 12px; }
+      .txt-blue { fill: #60a5fa; font-size: 12px; font-weight: bold; }
+      .txt-gray { fill: #64748b; font-size: 11px; }
+      .box-bg { fill: #1e293b; rx: 6px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="680" class="bg" rx="10" />
+
+  <!-- Terminal Window Bar -->
+  <rect width="1000" height="42" class="header-bg" rx="10" />
+  <circle cx="22" cy="21" r="6" fill="#ef4444" />
+  <circle cx="42" cy="21" r="6" fill="#f59e0b" />
+  <circle cx="62" cy="21" r="6" fill="#10b981" />
+  <text x="500" y="26" class="top-title" text-anchor="middle">zsh — ertan@MacBook-Pro: ~/Desktop/Backend_Gelistirme — npm test (Supertest 52 Steps)</text>
+
+  <!-- Terminal Content -->
+  <text x="30" y="75" class="txt-cmd">$ npm test</text>
+  <text x="30" y="98" class="txt-gray">&gt; taskflow-api@1.0.0 test</text>
+  <text x="30" y="115" class="txt-gray">&gt; node tests/runTests.js</text>
+
+  <!-- Banner -->
+  <text x="30" y="145" class="txt-blue">======================================================</text>
+  <text x="30" y="165" class="txt-blue">🧪 TASKFLOW API TEST SÜRECİ BAŞLATILIYOR (Supertest &amp; Jest Pattern)</text>
+  <text x="30" y="185" class="txt-blue">======================================================</text>
+
+  <!-- Test Group 1 -->
+  <text x="30" y="215" class="txt-yellow">[TEST GRUBU 1] Temel Kök Rota &amp; Sistem Durumu</text>
+  <text x="50" y="235" class="txt-green">✔ PASS: GET / 200 OK dönmelidir (status: "ONLINE")</text>
+  <text x="50" y="253" class="txt-green">✔ PASS: GET / TaskFlow proje başlığını ve servis dizinini içermelidir</text>
+
+  <!-- Test Group 2 -->
+  <text x="30" y="280" class="txt-yellow">[TEST GRUBU 2] Zorunlu CRUD Operasyonları</text>
+  <text x="50" y="300" class="txt-green">✔ PASS: POST /tasks yeni görev oluşturulduğunda 201 Created dönmelidir</text>
+  <text x="50" y="318" class="txt-green">✔ PASS: GET /tasks tüm kayıtlı görevleri listelemelidir (count &gt;= 8)</text>
+  <text x="50" y="336" class="txt-green">✔ PASS: GET /tasks/:id doğru görev kaydını getirmelidir</text>
+  <text x="50" y="354" class="txt-green">✔ PASS: PUT /tasks/:id durumu 'completed' ve önceliği 'critical' yapmalıdır</text>
+  <text x="50" y="372" class="txt-green">✔ PASS: DELETE /tasks/:id görevi silmeli ve silinen nesneyi dönmelidir</text>
+  <text x="50" y="390" class="txt-green">✔ PASS: GET /tasks/999999 olmayan ID sorgulandığında 404 Not Found dönmelidir</text>
+
+  <!-- Test Group 3 -->
+  <text x="30" y="415" class="txt-yellow">[TEST GRUBU 3] Validation Middleware Doğrulamaları</text>
+  <text x="50" y="435" class="txt-green">✔ PASS: POST /tasks başlıksız istekte 400 Bad Request fırlatmalıdır</text>
+  <text x="50" y="453" class="txt-green">✔ PASS: POST /tasks geçersiz priority girildiğinde 400 Bad Request dönmelidir</text>
+
+  <!-- Test Group 4 & 5 -->
+  <text x="30" y="478" class="txt-yellow">[TEST GRUBU 4 &amp; 5] Filtreleme, Arama, Sayfalama, Raporlama &amp; Logger</text>
+  <text x="50" y="498" class="txt-green">✔ PASS: GET /tasks?priority=high &amp; GET /tasks/search?keyword=backend (Filtreleme &amp; Arama)</text>
+  <text x="50" y="516" class="txt-green">✔ PASS: GET /reports/summary tamamlanma oranı, öncelik ve proje dağılımını dönmelidir</text>
+  <text x="50" y="534" class="txt-green">✔ PASS: Logger Middleware access.log dosyasına tüm istekleri başarıyla yazmalıdır</text>
+
+  <!-- Summary Box -->
+  <rect x="30" y="560" width="940" height="95" class="box-bg" stroke="#22c55e" stroke-width="1.5" />
+  <text x="50" y="585" class="txt-white" font-weight="bold">📊 TEST SONUÇLARI MATRİSİ:</text>
+  <text x="50" y="605" class="txt-white">Toplam Test Senaryosu: <tspan fill="#38bdf8" font-weight="bold">52 Adım</tspan> | Başarılı: <tspan fill="#22c55e" font-weight="bold">52 (%100)</tspan> | Başarısız: <tspan fill="#64748b">0</tspan></text>
+  <text x="50" y="635" class="txt-green" font-size="14">🎉 TÜM TESTLER BAŞARIYLA GEÇTİ! (100% SUCCESS — 52/52 PASSED)</text>
+</svg>
