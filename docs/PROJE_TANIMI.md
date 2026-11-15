@@ -98,17 +98,3 @@ flowchart TD
 | **İleri Pratik 2** | Validation Middleware | Görev ekleme ve güncellemelerde katı doğrulama kuralları (400 Bad Request) |
 | **İleri Pratik 3** | Raporlama Servisleri | Tamamlanan (`/reports/completed`), bekleyen (`/reports/pending`) ve genel özet (`/reports/summary`) |
 | **İleri Pratik 4** | Kapsamlı Dokümantasyon | API dokümantasyonu, test dokümantasyonu, kullanım kılavuzu ve Postman koleksiyonu |
-
----
-
-## <img src="https://api.iconify.design/lucide/award.svg?color=%2334d399" width="20" height="20" align="center" /> 5. Değerlendirme Kriterleri Uyumluluk Matrisi
-
-| Kriter | Puan | Karşılanma Durumu | Kanıt / Dosya |
-|---|---|---|---|
-| **CRUD İşlemleri** | 30 | Eksiksiz ve test edildi | `src/controllers/taskController.js`, `src/routes/taskRoutes.js` |
-| **Routing Yapısı** | 15 | Modüler Express Router | `src/routes/index.js`, `src/routes/taskRoutes.js`, `src/routes/reportRoutes.js` |
-| **Temel Middleware (Logger)** | 15 | Konsol ve Dosya Loglaması | `src/middlewares/loggerMiddleware.js`, `logs/access.log` |
-| **Kod Kalitesi** | 15 | Clean Code, Modüler Mimari | Kod standartları, hata yakalama, açıklayıcı JSDoc yorumları |
-| **Dokümantasyon (Temel)** | 15 | Kapsamlı Doküman Seti | `README.md`, `docs/PROJE_TANIMI.md`, `docs/VERI_MODELI.md` |
-| **Test Süreçleri (Postman)** | 10 | 52/52 Başarılı Test & Görseller | `postman/TaskFlow_API.postman_collection.json`, `docs/screenshots/` |
-| **TOPLAM** | **100 / 100** | **Tam Puan Hedefi Başarıyla Sağlandı** | Tüm zorunlu ve isteğe bağlı maddeler tamamlandı. |
